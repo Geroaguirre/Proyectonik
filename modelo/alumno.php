@@ -12,7 +12,7 @@ class Alumno {
     public function __construct($db) {
         $this->conn = $db;
     }
-
+    
     // Crear nuevo alumno
     public function crear() {
         $query = "INSERT INTO " . $this->table_name . " (nombre, apellido, email) VALUES (?, ?, ?)";
